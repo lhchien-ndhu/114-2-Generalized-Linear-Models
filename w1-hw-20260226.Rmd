@@ -1,0 +1,44 @@
+---
+title: ""
+author: ""
+date: ""
+output:
+  html_document
+---
+### W1 Homework:(2026.02.26) 
+
+#### Estimating the Standard Deviation of OLS estimators in R 
+
+Consider the linear regression model
+
+$$ Y = X\beta + \varepsilon, \varepsilon \sim (0, \sigma^2 I).$$
+
+The variance of the OLS estimator is 
+
+$$ Var (\hat{\beta}_{OLS}) = \sigma^2 (X'X)^{-1}. $$
+
+In practice, we estimate it by 
+
+$$ \widehat{Var} (\hat{\beta}_{OLS}) = \hat{\sigma}^2 (X'X)^{-1} = 
+\left(
+\begin{array}{ccc}
+\hat{b}_{11} & \cdots & \hat{b}_{1p}  \\
+& \vdots &  \\
+\hat{b}_{p1} & \cdots & \hat{b}_{pp}  \\
+\end{array}
+\right)_{p\times p}, $$
+where 
+
+$$ \hat{\sigma}^2 = \frac{\hat{\varepsilon}'\hat{\varepsilon}}{n-p} , ~~~ \hat{\varepsilon} = Y - \hat{Y}, ~~~ \hat{Y} = X\hat{\beta}_{OLS} $$
+
+The estimated standard deviation of the j-th OLS coefficient $\hat{\beta}_{j,OLS}$ is 
+
+$$ sd(\hat{\beta}_{j,OLS}) = \sqrt{\hat{b}_{jj}}, ~~~j=1,...,p $$
+
+Using R, compute the estimated standard deviations of the OLS estimator in two different ways:
+
+1. Using *lm*
+
+2. Using Matrix Operations
+
+Verify that the two approaches give identical results.
