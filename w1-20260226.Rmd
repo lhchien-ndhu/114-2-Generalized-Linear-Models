@@ -1,0 +1,78 @@
+---
+title: "Week1"
+author: "Li-Hsin Chien"
+date: "2026-02-26"
+output: html_document
+---
+
+### 1. Data
+
+```{r }
+
+library(faraway)
+#https://cran.r-project.org/web/packages/faraway/refman/faraway.html
+
+data(gala, package="faraway")
+#?gala
+head(gala[,-2])
+```
+
+### 2. Find OLS estimate: 
+
+#### 2.1. R commend *lm*
+
+```{r}
+lmod <- lm(Species ~ Area + Elevation + Nearest + Scruz  + Adjacent, data=gala)
+summary(lmod)
+```
+
+#### 2.2. Matrix Operations
+
+Suppose we have a response variable $y_i$ for $i=1,...,n$. This response may be related to a set of $p-1$ predictors $(x_{i1},...,x_{i(p-1)})$.
+
+Following the linear regression model approach: 
+$$ y_i = \beta_0 + \beta_1 x_{i1} + \cdots + \beta_{p-1} x_{i(p-1)} + \varepsilon_i, ~~~ i=1,...n $$
+
+Let 
+
+$$ Y=
+\left(
+\begin{array}{c}
+y_1  \\
+\vdots  \\
+y_n \\
+\end{array}
+\right)_{p\times 1}
+,
+X=
+\left(
+\begin{array}{cccc}
+1 & x_{11} & \dots & x_{1(p-1)} \\
+\vdots  \\
+1 & x_{n1} & \dots & x_{n(p-1)} \\
+\end{array}
+\right)_{n\times p}
+$$ 
+
+Then the OLS estimates: 
+
+$$ \hat{\beta}_{\text{OLS}} = (X'X)^{-1}X'Y $$
+
+```{r}
+y<-gala$Species
+
+x<-as.matrix(cbind(1,gala[,-c(1,2)]))
+#head(x)
+#x<-model.matrix(lmod)
+
+beta.hat<-solve(t(x)%*%x)%*%t(x)%*%y
+
+beta.hat
+lmod$coefficients
+
+```
+
+
+
+
+
