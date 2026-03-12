@@ -6,7 +6,7 @@ Textbook:
 --------------------------------------------------------------------------------------------------
 - 2026.03.12 linear regression model:
   - Prediction & explanation
-  - HW: chapter 5, Ex. 4 (a), (b), (c) 
+  - W3 HW: chapter 5, Ex. 4 (a), (b), (c) 
 
 - 2026.03.05 The results of *lm*; inferences
 
