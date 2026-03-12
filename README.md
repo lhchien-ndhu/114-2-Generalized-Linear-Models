@@ -3,6 +3,9 @@
 Textbook:
 1. Linear Models with R: https://julianfaraway.github.io/faraway/LMR/
 2. Extending the Linear Model with R: https://julianfaraway.github.io/faraway/ELM/
+
+Datasets for Books by Julian Faraway: https://julianfaraway.r-universe.dev/faraway
+
 --------------------------------------------------------------------------------------------------
 - 2026.03.12 linear regression model:
   - Prediction & explanation
