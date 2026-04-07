@@ -7,6 +7,14 @@ Textbook:
 Datasets for Books by Julian Faraway: https://julianfaraway.r-universe.dev/faraway
 
 --------------------------------------------------------------------------------------------------
+- 2026.04.02 logistic regression model:
+  - Goodness of Fit (calibration, discrimination)
+  - Estimation problem: Perfect fit (embarrassment of riches)
+
+- 2026.03.26 logistic regression model:
+  - interpretation, inference, model selection(backward)
+  - W5 HW
+
 - 2026.03.12 linear regression model:
   - Prediction & explanation
   - W3 HW: chapter 5, Ex. 4 (a), (b), (c)
