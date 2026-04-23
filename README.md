@@ -7,6 +7,8 @@ Textbook:
 Datasets for Books by Julian Faraway: https://julianfaraway.r-universe.dev/faraway
 
 --------------------------------------------------------------------------------------------------
+- 2026.04.23 uploaded medterm exam solutions (med_solution.pdf)
+  
 - 2026.04.09 logistic regression model:
   -Row residual, deviance residual
   -W7 HW 
