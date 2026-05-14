@@ -8,6 +8,8 @@ Datasets for Books by Julian Faraway: https://julianfaraway.r-universe.dev/faraw
 
 --------------------------------------------------------------------------------------------------
 - 2026.05.14 Random Effect: estimation, inferences
+  
+- 2026.05.08 Week 11 Homework (Week 11 HW.pdf)
 
 - 2026.05.07 Count data: Negative Binomial Response
 
