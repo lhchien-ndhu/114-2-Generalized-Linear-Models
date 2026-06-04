@@ -7,6 +7,10 @@ Textbook:
 Datasets for Books by Julian Faraway: https://julianfaraway.r-universe.dev/faraway
 
 --------------------------------------------------------------------------------------------------
+- 2026.06.04 Decision trees 2: spam example
+
+- 2026.05.28 Decision trees: CART, random forest
+
 - 2026.05.14 Random Effect: estimation, inferences
   
 - 2026.05.08 Week 11 Homework (Week 11 HW.pdf)
