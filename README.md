@@ -7,6 +7,8 @@ Textbook:
 Datasets for Books by Julian Faraway: https://julianfaraway.r-universe.dev/faraway
 
 --------------------------------------------------------------------------------------------------
+- 2026.06.22 Uploaded Homework solution: Week 5&7, Week 11
+
 - 2026.06.04 Decision trees 2: spam example
 
 - 2026.05.28 Decision trees: CART, random forest
